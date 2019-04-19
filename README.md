@@ -1,2 +1,2 @@
-# la-tantatrice
-Helper to create ice cream receipe
+# La Tantatrice
+Helper to create ice cream recipes

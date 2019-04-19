@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/mxmeunier/la-tantatrice#readme",
   "devDependencies": {
-    "vuejs": "^3.0.1"
+    "vue": "^2.6.10"
   }
 }
