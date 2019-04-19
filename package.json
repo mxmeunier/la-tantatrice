@@ -1,0 +1,26 @@
+{
+  "name": "la-tantatrice",
+  "version": "1.0.0",
+  "description": "Helper to create ice cream receipe",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxmeunier/la-tantatrice.git"
+  },
+  "keywords": [
+    "ice cream",
+    "receipe"
+  ],
+  "author": "Maxime Meunier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mxmeunier/la-tantatrice/issues"
+  },
+  "homepage": "https://github.com/mxmeunier/la-tantatrice#readme",
+  "devDependencies": {
+    "vuejs": "^3.0.1"
+  }
+}
