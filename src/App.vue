@@ -1,8 +1,19 @@
 <template>
     <div>
-        <h1>Hello World!</h1>
+        <h1 class="title"> {{ title }} </h1>
     </div>
 </template>
+
 <script>
+	export default {
+		data () {
+			return {
+				title: 'La Tantatrice'
+			}
+		}
+	} 
 </script>
-<style></style>
+
+<style scoped>
+	.title { color: red };
+</style>
