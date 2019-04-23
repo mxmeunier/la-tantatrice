@@ -2,8 +2,9 @@
   "name": "la-tantatrice",
   "version": "1.0.0",
   "description": "Helper to create ice cream receipe",
-  "main": "index.js",
+  "private": true,
   "scripts": {
+    "build": "npx webpack --config webpack.config.js",
     "test": "test"
   },
   "repository": {
@@ -21,6 +22,10 @@
   },
   "homepage": "https://github.com/mxmeunier/la-tantatrice#readme",
   "devDependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
   }
 }
