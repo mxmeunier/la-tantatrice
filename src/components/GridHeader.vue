@@ -1,10 +1,8 @@
 <template>
 	<div class="grid-header">
-		<grid-cell
-			v-for="title in header"
-			v-bind:key="title"
-			v-bind:content="title"
-		></grid-cell>
+		<div class="header-cell"
+			v-for="(title, index) in header"
+		> {{ title }} </div>
 	</div>
 </template>
 
@@ -17,13 +15,11 @@
 				type: Array,
 				required: true
 			}
-		},
-		components: {
-			GridCell
 		}
 	}
 </script>
 
 <style scoped>
 	.grid-header { display: table-row }
+	.header-cell { display: table-cell; border: 1px solid black }
 </style>
