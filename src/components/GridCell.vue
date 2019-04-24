@@ -1,13 +1,10 @@
 <template>
-	<div> {{ content }} </div>
+	<div>
+		<input type="text">
+	</div>
 </template>
 
 <script>
-	export default {
-		props: {
-			content: String
-		}
-	}
 </script>
 
 <style scoped>
