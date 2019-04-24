@@ -1,7 +1,8 @@
 <template>
 	<div id="grid">
 		<grid-header :header="header"></grid-header>
-		<grid-row :size="rowSize"></grid-row>
+		<grid-row :size="rowSize" v-for="(row, index) in rows" :key="index"></grid-row>
+		<button @click="add">Add</button>
 	</div>
 </template>
 
@@ -10,6 +11,11 @@
 	import GridRow from './GridRow.vue'
 
 	export default {
+		data () {
+			return {
+				rows: []
+			}
+		},
 		props: {
 			header: {
 				type: Array,
@@ -23,6 +29,14 @@
 		computed: {
 			rowSize: function() {
 				return this.header.length;
+			}
+		},
+		methods: {
+			add: function() {
+				this.rows.push({});
+			},
+			remove: function(index) {
+				this.rows.splice(index, 1);
 			}
 		}
 	};
